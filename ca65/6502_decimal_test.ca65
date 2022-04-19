@@ -65,7 +65,7 @@ N2L:    .res    1,0
 N2H:    .res    2,0
 
         .CODE
-        .org $200
+        .org $400
 TEST:   ldy #1    ; initialize Y (used to loop through carry flag values)
         sty ERROR ; store 1 in ERROR until the test passes
         lda #0    ; initialize N1 and N2
