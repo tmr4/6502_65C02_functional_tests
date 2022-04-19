@@ -34,7 +34,7 @@ chk_z   = 1         ; check zero flag
 chk_c   = 1         ; check carry flag
 
             .macro  end_of_test
-                .byte   $db     ;execute 65C02 stop instruction
+                jmp *   ;test passed, no errors.
             .endmacro
 
         .ZEROPAGE
