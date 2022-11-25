@@ -8,7 +8,7 @@ An NMake build task is provided. Just open the project in VS Code and press `shi
 
 You may need to modify `tasks.json` and `Makefile` if you use different build tools.
 
-These projects assume your `CC65` executables are located in `c:\cc65`. If this isn't the case you'll need to edit the `E` variable in the `Makefile`.
+The project assumes your `CC65` executables are located in `c:\cc65`. If this isn't the case you'll need to edit the `E` variable in the `Makefile`.
 
 ## Running the tests
 
@@ -24,19 +24,19 @@ The tests don't give any outward indication that they've completed.  I recommend
 
 * 6502_functional_test.s: line 5397
 * 65C02_extended_opcodes_test.s: line 2408
-* 6502_decimal_test.s: 121
+* 6502_decimal_test.s: line 121
 
-The 6502 functional and 65C02 extended opcodes tests complete successfully if you hit the breakpoint.  The 6502 decimal tests complete successfully if the ERROR variable is zero.
+The 6502 functional and 65C02 extended opcodes tests complete successfully if you hit the breakpoint.  The 6502 decimal tests complete successfully if the `ERROR` variable is zero when you've hit the breakpoint.
 
-The tests complete as follows on my modest PC:
+The tests complete as follows on my modest tablet PC:
 
 * 6502_functional_test.s: 40 seconds
 * 65C02_extended_opcodes_test.s: 28 seconds
-* 6502_decimal_test.s: 12 seconds
+* 6502_decimal_test.s: 4 seconds
 
-If your tests don't complete in that time you likely have a problem with your build.
+If your tests don't complete in a reasonable time, you likely have a problem with your build.
 
 ## Status and Limitations
 
-1. As mentioned in the db65xx README, execution of invalid opcodes on the 65C02 and 6502 throw an exception.  As such, I've disabled the NOP tests for these opcodes.
+1. As mentioned in the db65xx README, execution of invalid opcodes on the 65C02 and 6502 cores throw an exception.  As such, I've disabled the NOP tests for these opcodes.
 2. I've configured the decimal tests for the 65C02 and only for valid BCD values.  I've also disabled testing the overflow flag as it really isn't applicable in decimal mode.  If your code uses the overflow flag in decimal mode then you'll probably want to use a different simulator.
