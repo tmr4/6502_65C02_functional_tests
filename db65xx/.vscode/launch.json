@@ -1,0 +1,56 @@
+{
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+                {
+                        "type": "65xx",
+                        "request": "launch",
+                        "name": "Launch 6502 tests",
+                        "program": "${cwd}",
+                        "args": [
+                                {
+                                        "cpu": "65C02",
+                                        "sbin": "${cwd}\\Release\\6502_tests.bin",
+                                        "src": "${cwd}\\src",
+                                        "list": "${cwd}\\Release\\listing"
+                                }
+                        ],
+                        "stopOnEntry": true,
+                        "cwd": "${cwd}"
+                },
+                {
+                        "type": "65xx",
+                        "request": "launch",
+                        "name": "Launch 65C02 tests",
+                        "program": "${cwd}",
+                        "args": [
+                                {
+                                        "cpu": "65C02",
+                                        "sbin": "${cwd}\\Release\\65C02_tests.bin",
+                                        "src": "${cwd}\\src",
+                                        "list": "${cwd}\\Release\\listing"
+                                }
+                        ],
+                        "stopOnEntry": true,
+                        "cwd": "${cwd}"
+                },
+                {
+                        "type": "65xx",
+                        "request": "launch",
+                        "name": "Launch decimal tests",
+                        "program": "${cwd}",
+                        "args": [
+                                {
+                                        "cpu": "65C02",
+                                        "sbin": "${cwd}\\Release\\decimal_tests.bin",
+                                        "src": "${cwd}\\src",
+                                        "list": "${cwd}\\Release\\listing"
+                                }
+                        ],
+                        "stopOnEntry": true,
+                        "cwd": "${cwd}"
+                }
+        ]
+}
