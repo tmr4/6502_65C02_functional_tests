@@ -36,6 +36,32 @@ The tests complete as follows on my modest tablet PC:
 
 If your tests don't complete in a reasonable time, you likely have a problem with your build.
 
+## Screenshots
+
+### Start of 6502 tests
+
+![Start of 6502 tests](https://trobertson.site/wp-content/uploads/2022/11/6502_start.png)
+
+### End of 6502 tests
+
+![End of 6502 tests](https://trobertson.site/wp-content/uploads/2022/11/6502_end.png)
+
+### Start of 65C02 tests
+
+![Start of 65C02 tests](https://trobertson.site/wp-content/uploads/2022/11/65c02_start.png)
+
+### End of 65C02 tests
+
+![End of 65C02 tests](https://trobertson.site/wp-content/uploads/2022/11/65c02_end.png)
+
+### Start of decimal mode tests
+
+![Start of decimal mode tests](https://trobertson.site/wp-content/uploads/2022/11/decimal_start.png)
+
+### End of decimal mode tests
+
+![End of decimal mode tests](https://trobertson.site/wp-content/uploads/2022/11/decimal_end.png)
+
 ## Status and Limitations
 
 1. As mentioned in the db65xx README, execution of invalid opcodes on the 65C02 and 6502 cores throw an exception.  As such, I've disabled the NOP tests for these opcodes.
