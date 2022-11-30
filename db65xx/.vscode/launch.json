@@ -12,7 +12,7 @@
                         "args": [
                                 {
                                         "cpu": "65C02",
-                                        "sbin": "${cwd}\\Release\\6502_tests.bin",
+                                        "sbin": "${cwd}\\Release\\6502_functional_test.bin",
                                         "src": "${cwd}\\src",
                                         "list": "${cwd}\\Release\\listing"
                                 }
@@ -28,7 +28,7 @@
                         "args": [
                                 {
                                         "cpu": "65C02",
-                                        "sbin": "${cwd}\\Release\\65C02_tests.bin",
+                                        "sbin": "${cwd}\\Release\\65C02_extended_opcodes_test.bin",
                                         "src": "${cwd}\\src",
                                         "list": "${cwd}\\Release\\listing"
                                 }
@@ -44,7 +44,7 @@
                         "args": [
                                 {
                                         "cpu": "65C02",
-                                        "sbin": "${cwd}\\Release\\decimal_tests.bin",
+                                        "sbin": "${cwd}\\Release\\6502_decimal_test.bin",
                                         "src": "${cwd}\\src",
                                         "list": "${cwd}\\Release\\listing"
                                 }
